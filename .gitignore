@@ -1,0 +1,4 @@
+__pycache__/
+data/CIFAR10/
+weights/
+logs/output.log
