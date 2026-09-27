@@ -106,7 +106,7 @@ def save_mask_scores(state_dict, file_name):
         f.writelines(mask_values)
 
 def read_data(file_name):
-    tempt = pd.read_csv(file_name, sep='\s+', skiprows=1, header=None)
+    tempt = pd.read_csv(file_name, sep=r'\s+', skiprows=1, header=None)
     layer = tempt.iloc[:, 1]
     idx = tempt.iloc[:, 2]
     value = tempt.iloc[:, 3]
